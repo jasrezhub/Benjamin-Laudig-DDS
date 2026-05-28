@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Laudig DDS — Family & Cosmetic Dentistry</title>
+  <meta name="description" content="Exceptional dental care from Benjamin Laudig DDS. Comprehensive family, cosmetic, and restorative dentistry. Book your appointment today." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+:root{--navy:#1a2e4a;--navy-lt:#243d61;--gold:#c9a84c;--gold-lt:#e2c97e;--cream:#faf8f4;--white:#ffffff;--gray:#6b7280;--gray-lt:#f3f1ec;--text:#1f2937;--radius:12px;--shadow:0 4px 24px rgba(26,46,74,0.10);--trans:0.25s ease}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.2;color:var(--navy)}
+h1{font-size:clamp(2.2rem,5vw,3.8rem)}
+h2{font-size:clamp(1.7rem,3.5vw,2.6rem)}
+h3{font-size:clamp(1.2rem,2vw,1.5rem)}
+p{color:var(--gray);font-weight:300}
+.section-label{font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:.75rem}
+.container{max-width:1180px;margin:0 auto;padding:0 2rem}
+section{padding:90px 0}
+.section-centered{text-align:center}
+.section-centered h2{margin-bottom:1rem}
+.section-centered>p{max-width:580px;margin:0 auto 3rem}
+.gold-line{width:56px;height:3px;background:var(--gold);margin:1.25rem 0 2rem;border-radius:2px}
+.gold-line.centered{margin-left:auto;margin-right:auto}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 2rem;border-radius:50px;font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:500;cursor:pointer;text-decoration:none;transition:all var(--trans);border:2px solid transparent}
+.btn-primary{background:var(--gold);color:var(--navy)}
+.btn-primary:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.35)}
+.btn-outline{background:transparent;border-color:var(--white);color:var(--white)}
+.btn-outline:hover{background:var(--white);color:var(--navy)}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-navy:hover{background:var(--navy-lt);transform:translateY(-2px);box-shadow:0 8px 24px rgba(26,46,74,.25)}
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,248,244,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,168,76,.2);transition:box-shadow var(--trans)}
+.navbar.scrolled{box-shadow:var(--shadow)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 2rem;max-width:1180px;margin:0 auto}
+.nav-logo{display:flex;flex-direction:column;text-decoration:none;cursor:pointer}
+.nav-logo .logo-name{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--navy);line-height:1}
+.nav-logo .logo-title{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-links a{text-decoration:none;font-size:.9rem;font-weight:500;color:var(--navy);transition:color var(--trans);position:relative;cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif}
+.nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:2px;background:var(--gold);transition:width var(--trans);border-radius:2px}
+.nav-links a:hover{color:var(--gold)}
+.nav-links a:hover::after{width:100%}
+.nav-links a.active{color:var(--gold)}
+.nav-links a.active::after{width:100%}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
+.hamburger span{display:block;width:24px;height:2px;background:var(--navy);border-radius:2px;transition:all var(--trans)}
+/* Pages */
+.page{display:none}
+.page.active{display:block}
+/* Hero */
+.hero{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-lt) 60%,#1e3f6b 100%);display:flex;align-items:center;position:relative;overflow:hidden;padding-top:80px}
+.hero::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(201,168,76,.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;max-width:1180px;margin:0 auto;padding:4rem 2rem;position:relative;z-index:1}
+.hero-content h1{color:var(--white);margin-bottom:1.25rem}
+.hero-content h1 em{color:var(--gold);font-style:italic}
+.hero-content p{color:rgba(255,255,255,.75);font-size:1.1rem;max-width:480px;margin-bottom:2.25rem}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,.15)}
+.hero-stat-num{display:block;font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;color:var(--gold);line-height:1}
+.hero-stat-label{font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.3rem}
+.hero-image-wrap{position:relative;display:flex;justify-content:center}
+.hero-img-placeholder{width:420px;height:520px;border-radius:24px 24px 80px 24px;background:linear-gradient(160deg,rgba(201,168,76,.2),rgba(255,255,255,.05));border:1px solid rgba(201,168,76,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;color:rgba(255,255,255,.5);font-size:.9rem;text-align:center;padding:2rem;position:relative}
+.hero-img-placeholder svg{width:80px;height:80px;opacity:.3}
+.hero-badge{position:absolute;bottom:-20px;left:-20px;background:var(--white);border-radius:16px;padding:1rem 1.5rem;box-shadow:0 8px 32px rgba(0,0,0,.15);display:flex;align-items:center;gap:.75rem}
+.badge-stars{color:#f59e0b;font-size:1rem}
+.badge-text strong{display:block;font-size:.9rem;color:var(--navy);font-family:'DM Sans',sans-serif}
+.badge-text span{font-size:.75rem;color:var(--gray)}
+/* Trust bar */
+.trust-bar{background:var(--white);padding:2rem 0;border-bottom:1px solid var(--gray-lt)}
+.trust-inner{display:flex;justify-content:center;align-items:center;gap:3rem;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:0 2rem}
+.trust-item{display:flex;align-items:center;gap:.75rem;font-size:.9rem;font-weight:500;color:var(--navy)}
+.trust-item svg{color:var(--gold);flex-shrink:0}
+/* Reviews */
+.reviews{background:var(--white)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.review-card{background:var(--cream);border-radius:var(--radius);padding:1.75rem;border:1px solid rgba(201,168,76,.15);transition:transform var(--trans),box-shadow var(--trans)}
+.review-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.review-stars{color:#f59e0b;font-size:1rem;margin-bottom:.75rem}
+.review-text{font-size:.95rem;color:var(--text);font-weight:300;margin-bottom:1.25rem;line-height:1.7}
+.review-author{display:flex;align-items:center;gap:.75rem}
+.review-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-lt));display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:'Playfair Display',serif;font-weight:700;font-size:1rem;flex-shrink:0}
+.review-name{font-weight:600;font-size:.9rem;color:var(--navy)}
+.review-date{font-size:.78rem;color:var(--gray)}
+.review-source{display:flex;align-items:center;gap:.5rem;margin-top:1rem;font-size:.78rem;color:var(--gray)}
+/* Services preview */
+.services-preview{background:var(--cream)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+.service-card{background:var(--white);border-radius:var(--radius);padding:2rem;border:1px solid transparent;transition:all var(--trans);text-decoration:none;display:block;cursor:pointer}
+.service-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:var(--shadow)}
+.service-icon{width:52px;height:52px;background:linear-gradient(135deg,var(--navy),var(--navy-lt));border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;font-size:1.5rem}
+.service-card h3{font-size:1.1rem;margin-bottom:.5rem;color:var(--navy)}
+.service-card p{font-size:.9rem}
+/* Photos */
+.photos{background:var(--white)}
+.photos-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
+.photo-item{border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;color:var(--gray);font-size:.85rem;text-align:center;padding:1rem;border:1px solid rgba(0,0,0,.06)}
+.photo-item.wide{grid-column:span 2}
+.photo-placeholder-icon{display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(107,114,128,.5)}
+.photo-placeholder-icon svg{opacity:.4}
+/* CTA band */
+.cta-band{background:linear-gradient(135deg,var(--navy),var(--navy-lt));padding:80px 0;text-align:center}
+.cta-band h2{color:var(--white)}
+.cta-band p{color:rgba(255,255,255,.7);margin:1rem auto 2.5rem;max-width:520px}
+/* About */
+.about{background:var(--cream)}
+.about-inner{display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:center}
+.about-img{width:100%;aspect-ratio:3/4;border-radius:24px 24px 80px 24px;background:linear-gradient(160deg,#d6e4f0,#c8d8e8);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;color:rgba(26,46,74,.4);font-size:.85rem;text-align:center;border:1px solid rgba(26,46,74,.1)}
+.about-content p{margin-bottom:1.25rem}
+.cred-item{display:flex;align-items:center;gap:.75rem;font-size:.9rem;color:var(--text);font-weight:400;margin-bottom:.75rem}
+.cred-item svg{color:var(--gold);flex-shrink:0}
+/* Contact */
+.contact{background:var(--white)}
+.contact-inner{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:start}
+.contact-detail{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1.5rem;font-size:.95rem}
+.contact-icon{width:44px;height:44px;border-radius:12px;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--navy)}
+.contact-detail strong{display:block;font-weight:600;color:var(--navy);margin-bottom:.2rem;font-size:.85rem}
+.contact-detail span,.contact-detail a{color:var(--gray);text-decoration:none;transition:color var(--trans)}
+.contact-detail a:hover{color:var(--gold)}
+.hours-grid{display:grid;grid-template-columns:auto 1fr;gap:.4rem 1.5rem;font-size:.9rem}
+.hours-grid .day{font-weight:500;color:var(--navy)}
+.hours-grid .time{color:var(--gray)}
+.contact-form-wrap{background:var(--cream);border-radius:var(--radius);padding:2.5rem;border:1px solid rgba(201,168,76,.15)}
+.contact-form-wrap h3{margin-bottom:.25rem}
+.contact-form-wrap>p{margin-bottom:1.75rem;font-size:.9rem}
+.form-group{margin-bottom:1.25rem}
+.form-group label{display:block;font-size:.82rem;font-weight:600;color:var(--navy);margin-bottom:.4rem;letter-spacing:.03em}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:.75rem 1rem;border:1.5px solid #e5e3de;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:.9rem;background:var(--white);color:var(--text);transition:border-color var(--trans);outline:none}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--gold)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+/* Footer */
+.footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 0 30px}
+.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:3rem;max-width:1180px;margin:0 auto;padding:0 2rem}
+.footer-brand .logo-name{color:var(--white);font-size:1.3rem}
+.footer-brand .logo-title{color:var(--gold)}
+.footer-brand p{margin-top:1rem;font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.7}
+.footer-col h4{color:var(--white);font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.25rem;font-family:'DM Sans',sans-serif}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:.6rem}
+.footer-col ul li a{color:rgba(255,255,255,.55);text-decoration:none;font-size:.9rem;transition:color var(--trans);cursor:pointer;background:none;border:none;font-family:'DM Sans',sans-serif}
+.footer-col ul li a:hover{color:var(--gold)}
+.footer-col p{font-size:.88rem;line-height:1.7;color:rgba(255,255,255,.5)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:3rem;padding-top:1.5rem;text-align:center;font-size:.82rem;color:rgba(255,255,255,.35);max-width:1180px;margin-left:auto;margin-right:auto;padding-left:2rem;padding-right:2rem}
+/* Inner pages */
+.inner-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-lt) 100%);padding:140px 0 80px;text-align:center}
+.inner-hero h1{color:var(--white)}
+.inner-hero p{color:rgba(255,255,255,.7);margin-top:1rem}
+/* Services full */
+.services-category{margin-bottom:4rem}
+.services-category h3{font-size:1.4rem;border-left:4px solid var(--gold);padding-left:1rem;margin-bottom:1.5rem}
+.services-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.service-item{background:var(--white);border-radius:var(--radius);padding:1.5rem;display:flex;gap:1rem;align-items:flex-start;border:1px solid transparent;transition:all var(--trans)}
+.service-item:hover{border-color:var(--gold);box-shadow:var(--shadow)}
+.service-item-icon{width:44px;height:44px;border-radius:10px;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.2rem}
+.service-item h4{font-family:'DM Sans',sans-serif;font-size:.95rem;font-weight:600;color:var(--navy);margin-bottom:.3rem}
+.service-item p{font-size:.85rem}
+/* FAQ */
+.faq-item{background:var(--white);border-radius:var(--radius);margin-bottom:1rem;border:1px solid rgba(0,0,0,.06);overflow:hidden}
+.faq-question{width:100%;background:none;border:none;padding:1.4rem 1.75rem;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;color:var(--navy);text-align:left;gap:1rem;transition:color var(--trans)}
+.faq-question:hover{color:var(--gold)}
+.faq-icon{width:28px;height:28px;border-radius:50%;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all var(--trans);font-size:1.1rem;color:var(--navy)}
+.faq-item.open .faq-icon{background:var(--gold);color:var(--white);transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.open .faq-answer{max-height:500px}
+.faq-answer-inner{padding:0 1.75rem 1.4rem;font-size:.92rem;color:var(--gray);line-height:1.75;border-top:1px solid var(--gray-lt);padding-top:1rem;margin-top:-1px}
+/* Insurance */
+.insurance-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:3rem 0}
+.insurance-card{background:var(--white);border-radius:var(--radius);padding:1.5rem;text-align:center;border:1px solid rgba(0,0,0,.06);transition:all var(--trans)}
+.insurance-card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:var(--shadow)}
+.insurance-card-name{font-weight:600;color:var(--navy);font-size:.95rem;margin-top:.5rem}
+.insurance-logo-placeholder{width:56px;height:56px;border-radius:12px;background:var(--gray-lt);margin:0 auto .75rem;display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+.financing-box{background:linear-gradient(135deg,var(--navy),var(--navy-lt));border-radius:20px;padding:3rem;color:var(--white);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-top:3rem}
+.financing-box h3{color:var(--white);margin-bottom:1rem}
+.financing-box p{color:rgba(255,255,255,.7);margin-bottom:1.5rem}
+.financing-points{list-style:none}
+.financing-points li{display:flex;align-items:center;gap:.75rem;color:rgba(255,255,255,.8);font-size:.9rem;margin-bottom:.6rem}
+.financing-points li::before{content:'✓';color:var(--gold);font-weight:700}
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.fade-up{animation:fadeUp .7s ease both}
+.fade-up-2{animation:fadeUp .7s .15s ease both}
+/* Mobile */
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+  .hero-btns{justify-content:center}
+  .hero-stats{justify-content:center}
+  .hero-image-wrap{display:none}
+  .reviews-grid{grid-template-columns:1fr 1fr}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .photos-grid{grid-template-columns:1fr 1fr}
+  .about-inner{grid-template-columns:1fr}
+  .about-img{display:none}
+  .contact-inner{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:2rem}
+  .insurance-grid{grid-template-columns:repeat(2,1fr)}
+  .financing-box{grid-template-columns:1fr}
+  .services-list{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  section{padding:60px 0}
+  .reviews-grid{grid-template-columns:1fr}
+  .services-grid{grid-template-columns:1fr}
+  .photos-grid{grid-template-columns:1fr}
+  .nav-links{display:none;flex-direction:column;position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:1.5rem 2rem;border-bottom:1px solid var(--gray-lt);gap:1.25rem;box-shadow:var(--shadow)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+  .footer-inner{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')">
+      <span class="logo-name">Benjamin Laudig</span>
+      <span class="logo-title">DDS · Family & Cosmetic Dentistry</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a onclick="showPage('home')" data-page="home">Home</a></li>
+      <li><a onclick="showPage('services')" data-page="services">Services</a></li>
+      <li><a onclick="showPage('insurance')" data-page="insurance">Insurance</a></li>
+      <li><a onclick="showPage('faq')" data-page="faq">FAQ</a></li>
+      <li><a onclick="showPage('newpatient')" data-page="newpatient">New Patients</a></li>
+      <li><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)">Contact</a></li>
+      <li><a href="https://www.zocdoc.com" target="_blank" class="btn btn-primary" style="padding:.55rem 1.25rem;font-size:.85rem;">Book Appointment</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════
+     HOME PAGE
+════════════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content fade-up">
+        <span class="section-label">Trusted Family & Cosmetic Dentistry</span>
+        <h1>Your Smile Is Our <em>Greatest</em> Work</h1>
+        <p>Dr. Benjamin Laudig DDS delivers compassionate, state-of-the-art dental care in a warm and welcoming environment — from routine cleanings to complete smile transformations.</p>
+        <div class="hero-btns">
+          <a href="https://www.zocdoc.com" target="_blank" class="btn btn-primary">📅 Book an Appointment</a>
+          <a onclick="showPage('services')" class="btn btn-outline" style="cursor:pointer;">Explore Services</a>
+        </div>
+        <div class="hero-stats">
+          <div><span class="hero-stat-num">15+</span><div class="hero-stat-label">Years of Experience</div></div>
+          <div><span class="hero-stat-num">4.9★</span><div class="hero-stat-label">Google Rating</div></div>
+          <div><span class="hero-stat-num">3,000+</span><div class="hero-stat-label">Happy Patients</div></div>
+        </div>
+      </div>
+      <div class="hero-image-wrap fade-up-2">
+        <div class="hero-img-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"/></svg>
+          <span>Dr. Benjamin Laudig, DDS</span>
+          <small style="opacity:.5">Replace with doctor photo</small>
+        </div>
+        <div class="hero-badge">
+          <div class="badge-stars">★★★★★</div>
+          <div class="badge-text"><strong>200+ Google Reviews</strong><span>Rated 4.9 / 5.0</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Insurance Accepted</div>
+      <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>Same-Day Appointments</div>
+      <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>New Patients Welcome</div>
+      <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg>Flexible Hours</div>
+      <div class="trust-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Convenient Location</div>
+    </div>
+  </div>
+
+  <!-- Reviews -->
+  <section class="reviews">
+    <div class="container">
+      <div class="section-centered">
+        <span class="section-label">Patient Testimonials</span>
+        <h2>What Our Patients Are Saying</h2>
+        <div class="gold-line centered"></div>
+        <p>Don't just take our word for it — read what hundreds of happy patients have shared about their experience at our office.</p>
+        <div style="display:inline-flex;align-items:center;gap:.75rem;background:#f9f7f2;border-radius:50px;padding:.65rem 1.5rem;border:1px solid rgba(201,168,76,.2);">
+          <span style="font-weight:600;color:var(--navy);font-size:.95rem;">4.9 / 5.0</span>
+          <span style="color:#f59e0b;">★★★★★</span>
+          <span style="color:var(--gray);font-size:.85rem;">200+ Google Reviews</span>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Dr. Laudig is absolutely incredible. I've always been terrified of the dentist, but he made me feel completely at ease. The whole team is warm, professional, and gentle. Best dental experience I've ever had!"</p><div class="review-author"><div class="review-avatar">S</div><div><div class="review-name">Sarah M.</div><div class="review-date">2 weeks ago</div></div></div><div class="review-source">⭐ Posted on Google</div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"I came in for a chipped tooth on short notice and they fit me in the same day. Dr. Laudig did a flawless repair — you can't even tell it happened. The office is spotless and modern. Highly recommend!"</p><div class="review-author"><div class="review-avatar">J</div><div><div class="review-name">James R.</div><div class="review-date">1 month ago</div></div></div><div class="review-source">⭐ Posted on Google</div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"After years of avoiding the dentist out of anxiety, a friend recommended Dr. Laudig. From the first call to the final appointment, every single person was kind and accommodating. My smile has never looked better."</p><div class="review-author"><div class="review-avatar">L</div><div><div class="review-name">Linda K.</div><div class="review-date">3 months ago</div></div></div><div class="review-source">⭐ Posted on Google</div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"My whole family comes here — kids, parents, grandparents. Dr. Laudig is equally wonderful with all ages. Scheduling is easy, the team always remembers us, and the care is genuinely top-notch."</p><div class="review-author"><div class="review-avatar">T</div><div><div class="review-name">Tom & Angela B.</div><div class="review-date">4 months ago</div></div></div><div class="review-source">⭐ Posted on Google</div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"Had a root canal done here and was shocked by how painless it was. Dr. Laudig explained everything, checked in constantly, and even called me the next day to see how I was doing. That's rare dedication."</p><div class="review-author"><div class="review-avatar">M</div><div><div class="review-name">Marcus W.</div><div class="review-date">5 months ago</div></div></div><div class="review-source">⭐ Posted on Google</div></div>
+        <div class="review-card"><div class="review-stars">★★★★★</div><p class="review-text">"The Invisalign results I got from Dr. Laudig are stunning. He was honest about expectations, kept me updated throughout, and the final result exceeded everything I hoped for. Worth every penny."</p><div class="review-author"><div class="review-avatar">P</div><div><div class="review-name">Priya S.</div><div class="review-date">6 months ago</div></div></div><div class="review-source">⭐ Posted on Google</div></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem;"><a href="https://www.google.com/maps" target="_blank" class="btn btn-navy">View All Google Reviews ↗</a></div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="services-preview">
+    <div class="container">
+      <div class="section-centered">
+        <span class="section-label">What We Offer</span>
+        <h2>Comprehensive Dental Services</h2>
+        <div class="gold-line centered"></div>
+        <p>From your first cleaning to a complete smile makeover, we provide the full spectrum of dental care under one roof.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" onclick="showPage('services')"><div class="service-icon">🦷</div><h3>Preventive Care</h3><p>Routine cleanings, exams, X-rays, and sealants to keep your smile healthy for life.</p></div>
+        <div class="service-card" onclick="showPage('services')"><div class="service-icon">✨</div><h3>Cosmetic Dentistry</h3><p>Teeth whitening, veneers, bonding, and Invisalign to give you the smile you've always wanted.</p></div>
+        <div class="service-card" onclick="showPage('services')"><div class="service-icon">🔧</div><h3>Restorative Dentistry</h3><p>Fillings, crowns, bridges, and implants to restore function and beauty to your smile.</p></div>
+        <div class="service-card" onclick="showPage('services')"><div class="service-icon">😁</div><h3>Orthodontics</h3><p>Invisalign and clear aligner therapy for straighter teeth at any age.</p></div>
+        <div class="service-card" onclick="showPage('services')"><div class="service-icon">🚨</div><h3>Emergency Dentistry</h3><p>Same-day appointments available for toothaches, broken teeth, and dental emergencies.</p></div>
+        <div class="service-card" onclick="showPage('services')" style="border:2px dashed rgba(201,168,76,.4);background:transparent;justify-content:center;align-items:center;display:flex;flex-direction:column;gap:.5rem;"><div style="font-size:2rem;">→</div><h3 style="font-size:1rem;color:var(--gold);">View All Services</h3><p style="font-size:.85rem;text-align:center;">See our complete list of treatments</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <div class="cta-band">
+    <div class="container">
+      <span class="section-label" style="color:var(--gold-lt);">Ready to Get Started?</span>
+      <h2>Book Your Appointment Today</h2>
+      <p>New patients welcome — same-day appointments often available. We accept most insurance plans and offer flexible payment options.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://www.zocdoc.com" target="_blank" class="btn btn-primary">📅 Schedule Online</a>
+        <a href="tel:+18005551234" class="btn btn-outline">📞 Call Us Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="about-inner">
+        <div><div class="about-img"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="rgba(26,46,74,0.3)" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"/></svg><span style="color:rgba(26,46,74,.4);font-size:.85rem;">Dr. Laudig Photo</span></div></div>
+        <div class="about-content">
+          <span class="section-label">Meet Your Dentist</span>
+          <h2>Dr. Benjamin Laudig, DDS</h2>
+          <div class="gold-line"></div>
+          <p>Dr. Benjamin Laudig is a dedicated dental professional committed to providing exceptional, patient-centered care. With over 15 years of experience, he combines clinical expertise with a gentle, compassionate touch that puts even the most anxious patients at ease.</p>
+          <p>A graduate of [Your Dental School], Dr. Laudig is continuously expanding his knowledge through advanced continuing education in cosmetic dentistry, implantology, and the latest dental technologies.</p>
+          <p>When he's not in the office, Dr. Laudig enjoys spending time with his family, staying active, and giving back to the local community.</p>
+          <div style="margin-top:2rem;">
+            <div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>Doctor of Dental Surgery (DDS) — [University Name]</div>
+            <div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Member, American Dental Association (ADA)</div>
+            <div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>Member, [State] Dental Association</div>
+            <div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg>Certified Invisalign Provider</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="photos">
+    <div class="container">
+      <div class="section-centered">
+        <span class="section-label">Our Office & Patients</span>
+        <h2>A Look Inside Our Practice</h2>
+        <div class="gold-line centered"></div>
+        <p>From our state-of-the-art treatment rooms to the smiles we create every day.</p>
+      </div>
+      <div class="photos-grid">
+        <div class="photo-item wide"><div class="photo-placeholder-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>Office Reception</span></div></div>
+        <div class="photo-item"><div class="photo-placeholder-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>Treatment Room</span></div></div>
+        <div class="photo-item"><div class="photo-placeholder-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>Before & After</span></div></div>
+        <div class="photo-item"><div class="photo-placeholder-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>Before & After</span></div></div>
+        <div class="photo-item"><div class="photo-placeholder-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>Technology</span></div></div>
+        <div class="photo-item wide"><div class="photo-placeholder-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 24 24"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg><span>Dr. Laudig & Team</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-info">
+          <span class="section-label">Find Us</span>
+          <h2>Contact & Location</h2>
+          <div class="gold-line"></div>
+          <p style="margin-bottom:2rem;">We'd love to hear from you. Reach out by phone, email, or use the form — we typically respond within one business day.</p>
+          <div class="contact-detail"><div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><strong>Address</strong><span>123 Smile Street, Suite 200<br>Your City, ST 00000</span></div></div>
+          <div class="contact-detail"><div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></div><div><strong>Phone</strong><a href="tel:+18005551234">(800) 555-1234</a></div></div>
+          <div class="contact-detail"><div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div><div><strong>Email</strong><a href="mailto:hello@laudigdds.com">hello@laudigdds.com</a></div></div>
+          <div class="contact-detail"><div class="contact-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z"/></svg></div><div><strong>Office Hours</strong><div class="hours-grid" style="margin-top:.4rem;"><span class="day">Mon – Thu</span><span class="time">8:00 AM – 5:00 PM</span><span class="day">Friday</span><span class="time">8:00 AM – 3:00 PM</span><span class="day">Saturday</span><span class="time">9:00 AM – 1:00 PM</span><span class="day">Sunday</span><span class="time">Closed</span></div></div></div>
+        </div>
+        <div class="contact-form-wrap">
+          <h3>Send Us a Message</h3>
+          <p>Questions? New patient inquiries? We'll get back to you promptly.</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><label>First Name</label><input type="text" placeholder="Jane" required /></div>
+              <div class="form-group"><label>Last Name</label><input type="text" placeholder="Smith" required /></div>
+            </div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="jane@email.com" required /></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="(555) 000-0000" /></div>
+            <div class="form-group"><label>Reason for Contact</label><select><option value="">Select a reason…</option><option>New Patient Inquiry</option><option>Appointment Request</option><option>Insurance Question</option><option>Billing Question</option><option>Emergency</option><option>Other</option></select></div>
+            <div class="form-group"><label>Message</label><textarea placeholder="How can we help you?"></textarea></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end home page -->
+
+<!-- ═══════════════════════════════════════════════
+     SERVICES PAGE
+════════════════════════════════════════════════ -->
+<div id="page-services" class="page">
+  <div class="inner-hero"><div class="container"><span class="section-label">What We Provide</span><h1>Our Dental Services</h1><p>Comprehensive care for every smile, every age, every need — all under one roof.</p></div></div>
+  <section style="background:var(--cream);padding:80px 0;">
+    <div class="container">
+      <div class="services-category"><h3>🦷 Preventive Dentistry</h3><p style="margin-bottom:1.5rem;color:var(--gray);">The foundation of a healthy smile.</p><div class="services-list"><div class="service-item"><div class="service-item-icon">🧼</div><div><h4>Routine Cleanings & Exams</h4><p>Professional cleanings every 6 months to remove plaque and tartar, paired with comprehensive exams to catch issues early.</p></div></div><div class="service-item"><div class="service-item-icon">📷</div><div><h4>Digital X-Rays</h4><p>Low-radiation digital radiographs that give us a detailed view of your teeth and bone health with 80% less radiation than traditional film.</p></div></div><div class="service-item"><div class="service-item-icon">🛡️</div><div><h4>Dental Sealants</h4><p>Thin protective coatings applied to chewing surfaces to prevent cavities, especially recommended for children.</p></div></div><div class="service-item"><div class="service-item-icon">💧</div><div><h4>Fluoride Treatment</h4><p>Professional fluoride application to strengthen enamel and protect against decay for patients of all ages.</p></div></div><div class="service-item"><div class="service-item-icon">😴</div><div><h4>Night Guards (Bruxism)</h4><p>Custom-fitted night guards to protect teeth from grinding and clenching during sleep.</p></div></div><div class="service-item"><div class="service-item-icon">🔍</div><div><h4>Oral Cancer Screening</h4><p>Thorough examination of oral tissues during every routine visit to detect early signs of oral cancer.</p></div></div></div></div>
+      <div class="services-category"><h3>✨ Cosmetic Dentistry</h3><p style="margin-bottom:1.5rem;color:var(--gray);">Transform your smile and your confidence.</p><div class="services-list"><div class="service-item"><div class="service-item-icon">⚪</div><div><h4>Professional Teeth Whitening</h4><p>In-office whitening delivers dramatic results in a single visit, or take-home trays for gradual brightening.</p></div></div><div class="service-item"><div class="service-item-icon">💎</div><div><h4>Porcelain Veneers</h4><p>Ultra-thin ceramic shells permanently bonded to teeth to correct chips, stains, gaps, and shape.</p></div></div><div class="service-item"><div class="service-item-icon">🖌️</div><div><h4>Dental Bonding</h4><p>Tooth-colored resin to repair chips, cracks, or discoloration — often completed in one visit.</p></div></div><div class="service-item"><div class="service-item-icon">😁</div><div><h4>Smile Makeovers</h4><p>A personalized combination of cosmetic procedures designed to achieve your ideal smile.</p></div></div><div class="service-item"><div class="service-item-icon">🔬</div><div><h4>Gum Contouring</h4><p>Reshaping uneven or excessive gum tissue to create a more balanced, aesthetically pleasing smile line.</p></div></div><div class="service-item"><div class="service-item-icon">🦷</div><div><h4>Tooth-Colored Fillings</h4><p>Mercury-free composite resin fillings that blend seamlessly with your natural teeth.</p></div></div></div></div>
+      <div class="services-category"><h3>🔧 Restorative Dentistry</h3><p style="margin-bottom:1.5rem;color:var(--gray);">Restore the health, function, and beauty of damaged or missing teeth.</p><div class="services-list"><div class="service-item"><div class="service-item-icon">👑</div><div><h4>Dental Crowns</h4><p>Custom porcelain or ceramic caps that cover and protect a damaged tooth, restoring its shape and strength.</p></div></div><div class="service-item"><div class="service-item-icon">🌉</div><div><h4>Dental Bridges</h4><p>Fixed prosthetics that fill the gap left by missing teeth, anchored to adjacent teeth or implants.</p></div></div><div class="service-item"><div class="service-item-icon">🪛</div><div><h4>Dental Implants</h4><p>The gold standard for tooth replacement — titanium posts surgically placed in the jaw to support crowns or bridges.</p></div></div><div class="service-item"><div class="service-item-icon">🦴</div><div><h4>Dentures & Partials</h4><p>Custom full or partial dentures to replace multiple missing teeth, crafted for comfort and a natural appearance.</p></div></div><div class="service-item"><div class="service-item-icon">🌡️</div><div><h4>Root Canal Therapy</h4><p>Modern root canal treatment is virtually painless and saves severely infected teeth from extraction.</p></div></div><div class="service-item"><div class="service-item-icon">✂️</div><div><h4>Tooth Extractions</h4><p>Simple and surgical extractions performed gently, including wisdom tooth removal.</p></div></div></div></div>
+      <div class="services-category"><h3>😁 Orthodontics & Alignment</h3><div class="services-list"><div class="service-item"><div class="service-item-icon">🔲</div><div><h4>Invisalign® Clear Aligners</h4><p>Removable, virtually invisible trays that gradually straighten your teeth — no wires, no brackets.</p></div></div><div class="service-item"><div class="service-item-icon">🏋️</div><div><h4>Retainers</h4><p>Custom retainers to maintain your smile after orthodontic treatment — fixed and removable options available.</p></div></div></div></div>
+      <div class="services-category"><h3>🚨 Emergency Dentistry</h3><div class="services-list"><div class="service-item"><div class="service-item-icon">😣</div><div><h4>Toothache Relief</h4><p>Severe or persistent tooth pain requires prompt attention. We'll diagnose the cause and provide fast relief.</p></div></div><div class="service-item"><div class="service-item-icon">💔</div><div><h4>Chipped or Broken Teeth</h4><p>We repair chipped, cracked, or broken teeth with bonding, crowns, or other restorations — often in one visit.</p></div></div><div class="service-item"><div class="service-item-icon">🦷</div><div><h4>Knocked-Out Tooth</h4><p>Time is critical — call us immediately. Keep the tooth moist and come in as fast as possible.</p></div></div><div class="service-item"><div class="service-item-icon">🔩</div><div><h4>Lost Fillings or Crowns</h4><p>A lost restoration leaves your tooth vulnerable. We'll replace it quickly to protect the underlying tooth.</p></div></div></div></div>
+      <div class="services-category"><h3>👦 Children's Dentistry</h3><div class="services-list"><div class="service-item"><div class="service-item-icon">👶</div><div><h4>First Dental Visits</h4><p>We recommend first visits by age 1. Our gentle, friendly team makes it fun and stress-free.</p></div></div><div class="service-item"><div class="service-item-icon">🏅</div><div><h4>Cleanings & Fluoride for Kids</h4><p>Age-appropriate cleanings and fluoride treatments tailored to your child's needs and comfort level.</p></div></div><div class="service-item"><div class="service-item-icon">⚽</div><div><h4>Athletic Mouthguards</h4><p>Custom-fitted mouthguards for young athletes providing superior protection.</p></div></div><div class="service-item"><div class="service-item-icon">📐</div><div><h4>Space Maintainers</h4><p>When a baby tooth is lost early, space maintainers keep room open for the permanent tooth to emerge properly.</p></div></div></div></div>
+      <div style="background:linear-gradient(135deg,var(--navy),var(--navy-lt));border-radius:20px;padding:3rem;text-align:center;"><h2 style="color:var(--white);margin-bottom:.75rem;">Have Questions About a Specific Service?</h2><p style="color:rgba(255,255,255,.7);max-width:480px;margin:0 auto 2rem;">We're happy to help you find the right treatment plan. Consultations are always welcome.</p><div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;"><a href="https://www.zocdoc.com" target="_blank" class="btn btn-primary">Book a Consultation</a><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)" class="btn btn-outline" style="cursor:pointer;">Contact Us</a></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     FAQ PAGE
+════════════════════════════════════════════════ -->
+<div id="page-faq" class="page">
+  <div class="inner-hero"><div class="container"><span class="section-label">Common Questions</span><h1>Frequently Asked Questions</h1><p>Find answers to the most common questions about our office, procedures, insurance, and more.</p></div></div>
+  <section style="background:var(--cream);padding:80px 0;">
+    <div class="container">
+      <h3 style="border-left:4px solid var(--gold);padding-left:1rem;margin-bottom:1.5rem;">General & Appointments</h3>
+      <div class="faq-item"><button class="faq-question">How often should I visit the dentist?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Most patients benefit from a dental exam and professional cleaning every six months. However, some patients — especially those with gum disease, a history of cavities, or certain medical conditions — may need to come in more frequently. Dr. Laudig will recommend a schedule tailored to your individual needs.</div></div></div>
+      <div class="faq-item"><button class="faq-question">Do you accept new patients?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes! We warmly welcome new patients of all ages. You can book your first appointment online or call our office directly. We'll ask you to complete new patient forms before your visit.</div></div></div>
+      <div class="faq-item"><button class="faq-question">What should I bring to my first appointment?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Please bring: a valid photo ID, your dental insurance card (if applicable), a list of current medications and any known allergies, and your completed new patient forms. Arriving 10–15 minutes early is always appreciated.</div></div></div>
+      <div class="faq-item"><button class="faq-question">Do you offer same-day appointments?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">We do our best to accommodate same-day appointments, especially for dental emergencies. We reserve time in our schedule each day for urgent needs. Call us first thing in the morning if you're experiencing pain or a dental emergency.</div></div></div>
+      <div class="faq-item"><button class="faq-question">What is your cancellation policy?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">We ask that you give us at least 48 hours' notice if you need to cancel or reschedule. This allows us to offer the time slot to another patient in need. We understand that life happens — just give us a call as soon as you know.</div></div></div>
+      <h3 style="border-left:4px solid var(--gold);padding-left:1rem;margin-bottom:1.5rem;margin-top:3rem;">Dental Procedures</h3>
+      <div class="faq-item"><button class="faq-question">Are dental X-rays safe?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Yes. We use modern digital X-ray technology, which emits up to 80% less radiation than traditional film X-rays. The exposure is extremely low — comparable to the radiation you receive during a short airplane flight.</div></div></div>
+      <div class="faq-item"><button class="faq-question">Are root canals painful?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Modern root canal therapy is far more comfortable than its reputation suggests! With today's anesthetics and techniques, most patients report that a root canal feels similar to getting a filling. The goal is to relieve the pain caused by an infected tooth.</div></div></div>
+      <div class="faq-item"><button class="faq-question">How long do dental implants last?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Dental implants are designed to be a permanent, lifelong solution. With proper care — brushing, flossing, and regular dental check-ups — implants can last 20 years or more, and many last a lifetime.</div></div></div>
+      <div class="faq-item"><button class="faq-question">How long does teeth whitening last?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Professional whitening results typically last 1–3 years, depending on your diet, oral hygiene habits, and lifestyle factors. Touch-up treatments every 6–12 months can help maintain your bright smile.</div></div></div>
+      <div class="faq-item"><button class="faq-question">What is Invisalign, and am I a good candidate?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">Invisalign uses a series of custom-made, clear plastic aligners to gradually straighten your teeth — without metal wires or brackets. They're removable, comfortable, and virtually invisible. The best way to determine candidacy is with a consultation with Dr. Laudig.</div></div></div>
+      <h3 style="border-left:4px solid var(--gold);padding-left:1rem;margin-bottom:1.5rem;margin-top:3rem;">Insurance & Payment</h3>
+      <div class="faq-item"><button class="faq-question">What insurance plans do you accept?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">We accept most major dental insurance plans. Visit our Insurance page for a full list. Our team is happy to verify your benefits and explain your coverage before your visit.</div></div></div>
+      <div class="faq-item"><button class="faq-question">What if I don't have dental insurance?<span class="faq-icon">+</span></button><div class="faq-answer"><div class="faq-answer-inner">No insurance? No problem. We offer flexible payment options and accept CareCredit, allowing you to finance dental care with low or no-interest payment plans. Ask about our in-office savings plan as well.</div></div></div>
+      <div style="background:var(--navy);border-radius:20px;padding:3rem;text-align:center;margin-top:3rem;"><h2 style="color:var(--white);margin-bottom:.75rem;">Still Have Questions?</h2><p style="color:rgba(255,255,255,.7);margin:0 auto 2rem;max-width:480px;">We're here to help. Give us a call or send us a message.</p><div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;"><a href="tel:+18005551234" class="btn btn-primary">📞 Call (800) 555-1234</a><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)" class="btn btn-outline" style="cursor:pointer;">Send a Message</a></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     INSURANCE PAGE
+════════════════════════════════════════════════ -->
+<div id="page-insurance" class="page">
+  <div class="inner-hero"><div class="container"><span class="section-label">Coverage & Payment</span><h1>Insurance & Financing</h1><p>We believe cost should never be a barrier to excellent dental care.</p></div></div>
+  <section style="background:var(--cream);padding:80px 0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-bottom:4rem;">
+        <div><span class="section-label">Insurance</span><h2>We Accept Most Major Plans</h2><div class="gold-line"></div><p>Our office works with a wide range of dental insurance providers. We are in-network with many plans, which means lower out-of-pocket costs for you. If we are out-of-network with your plan, we will still file claims on your behalf and help you maximize your benefits.</p><div style="margin-top:2rem;"><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>We file insurance claims on your behalf</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>We verify your coverage before treatment</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>We explain your benefits in plain language</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>In-network & out-of-network plans accepted</div></div></div>
+        <div><div style="background:var(--white);border-radius:var(--radius);padding:2rem;border:1px solid rgba(0,0,0,.06);"><h3 style="font-size:1.1rem;margin-bottom:1rem;">Quick Insurance Tip</h3><p style="font-size:.9rem;">Most dental insurance plans cover 100% of preventive care (cleanings, exams, X-rays). Make sure to use your benefits — they reset each year and don't roll over!</p><div style="margin-top:1.5rem;padding:1rem;background:var(--cream);border-radius:8px;border-left:4px solid var(--gold);"><strong style="font-size:.85rem;color:var(--navy);">📞 Benefit Verification</strong><p style="font-size:.85rem;margin-top:.25rem;">Call us at <a href="tel:+18005551234" style="color:var(--gold);">(800) 555-1234</a> and our team will check your coverage for free before you come in.</p></div></div></div>
+      </div>
+      <span class="section-label">Accepted Providers</span><h2>Insurance Plans We Accept</h2><div class="gold-line"></div>
+      <div class="insurance-grid">
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🔵</div><div class="insurance-card-name">Delta Dental</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🟢</div><div class="insurance-card-name">Cigna Dental</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🔷</div><div class="insurance-card-name">MetLife</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🟡</div><div class="insurance-card-name">Aetna</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🔴</div><div class="insurance-card-name">Humana</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🟠</div><div class="insurance-card-name">United Concordia</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🔵</div><div class="insurance-card-name">BlueCross BlueShield</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🟣</div><div class="insurance-card-name">Guardian</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🔶</div><div class="insurance-card-name">Principal Financial</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🟢</div><div class="insurance-card-name">Ameritas</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🔷</div><div class="insurance-card-name">Sun Life</div></div>
+        <div class="insurance-card"><div class="insurance-logo-placeholder">🟡</div><div class="insurance-card-name">Anthem</div></div>
+      </div>
+      <div class="financing-box">
+        <div><span class="section-label" style="color:var(--gold-lt);">No Insurance? No Problem.</span><h3>Flexible Financing Options</h3><p>We partner with CareCredit to make dental care affordable for everyone.</p><ul class="financing-points"><li>0% interest financing for 6, 12, or 18 months</li><li>Low monthly payment plans available</li><li>Quick and easy online application</li><li>Immediate approval in most cases</li><li>No prepayment penalties</li></ul><a href="https://www.carecredit.com" target="_blank" class="btn btn-primary" style="margin-top:1.5rem;">Apply for CareCredit ↗</a></div>
+        <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:2rem;border:1px solid rgba(201,168,76,.3);"><h3 style="font-size:1.1rem;margin-bottom:1rem;color:var(--white);">Our In-Office Savings Plan</h3><p style="color:rgba(255,255,255,.65);font-size:.9rem;margin-bottom:1.25rem;">No insurance? Our annual membership plan covers your preventive care and gives you significant discounts on other treatments.</p><div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;"><div style="background:rgba(255,255,255,.1);border-radius:12px;padding:1.25rem;text-align:center;"><div style="font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);font-weight:700;">$299</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.25rem;">Individual / Year</div></div><div style="background:rgba(255,255,255,.1);border-radius:12px;padding:1.25rem;text-align:center;"><div style="font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--gold);font-weight:700;">$499</div><div style="font-size:.8rem;color:rgba(255,255,255,.6);margin-top:.25rem;">Family / Year</div></div></div><p style="font-size:.78rem;color:rgba(255,255,255,.4);margin-top:1rem;text-align:center;">Includes 2 cleanings, 1 exam, X-rays, and 15–20% off all other treatments.</p></div>
+      </div>
+      <div style="margin-top:4rem;text-align:center;"><h2 style="margin-bottom:.75rem;">We Also Accept</h2><div class="gold-line centered"></div><div style="display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-top:2rem;"><div style="background:var(--white);border-radius:var(--radius);padding:1.25rem 2rem;border:1px solid rgba(0,0,0,.06);font-weight:500;color:var(--navy);">💳 Visa</div><div style="background:var(--white);border-radius:var(--radius);padding:1.25rem 2rem;border:1px solid rgba(0,0,0,.06);font-weight:500;color:var(--navy);">💳 Mastercard</div><div style="background:var(--white);border-radius:var(--radius);padding:1.25rem 2rem;border:1px solid rgba(0,0,0,.06);font-weight:500;color:var(--navy);">💳 American Express</div><div style="background:var(--white);border-radius:var(--radius);padding:1.25rem 2rem;border:1px solid rgba(0,0,0,.06);font-weight:500;color:var(--navy);">🏦 HSA / FSA Cards</div><div style="background:var(--white);border-radius:var(--radius);padding:1.25rem 2rem;border:1px solid rgba(0,0,0,.06);font-weight:500;color:var(--navy);">💵 Cash & Check</div><div style="background:var(--white);border-radius:var(--radius);padding:1.25rem 2rem;border:1px solid rgba(0,0,0,.06);font-weight:500;color:var(--navy);">🏥 CareCredit</div></div></div>
+    </div>
+  </section>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     NEW PATIENT PAGE
+════════════════════════════════════════════════ -->
+<div id="page-newpatient" class="page">
+  <div class="inner-hero"><div class="container"><span class="section-label">Welcome!</span><h1>New Patient Information</h1><p>Here's everything you need to know before your first visit with us.</p></div></div>
+  <section style="background:var(--cream);padding:80px 0;">
+    <div class="container">
+      <div style="max-width:700px;margin:0 auto 4rem;text-align:center;"><span class="section-label">Getting Started</span><h2>Your First Visit, Made Easy</h2><div class="gold-line centered"></div><p>We know starting with a new dentist can feel daunting. Our team is dedicated to making your first visit comfortable, informative, and stress-free.</p></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-bottom:4rem;">
+        <div style="background:var(--white);border-radius:var(--radius);padding:2rem;text-align:center;border:1px solid rgba(201,168,76,.15);"><div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-lt));color:var(--gold);font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">1</div><h3 style="font-size:1.1rem;margin-bottom:.5rem;">Book Your Appointment</h3><p style="font-size:.9rem;">Schedule online or call us. We'll confirm your appointment and send you a reminder.</p><a href="https://www.zocdoc.com" target="_blank" class="btn btn-primary" style="margin-top:1rem;font-size:.85rem;padding:.6rem 1.4rem;">Book Now</a></div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:2rem;text-align:center;border:1px solid rgba(201,168,76,.15);"><div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-lt));color:var(--gold);font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">2</div><h3 style="font-size:1.1rem;margin-bottom:.5rem;">Complete Your Forms</h3><p style="font-size:.9rem;">Download and fill out your new patient forms before your visit to save time at the office.</p><a href="#npforms" class="btn btn-navy" style="margin-top:1rem;font-size:.85rem;padding:.6rem 1.4rem;">View Forms ↓</a></div>
+        <div style="background:var(--white);border-radius:var(--radius);padding:2rem;text-align:center;border:1px solid rgba(201,168,76,.15);"><div style="width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-lt));color:var(--gold);font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:700;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">3</div><h3 style="font-size:1.1rem;margin-bottom:.5rem;">Come See Us!</h3><p style="font-size:.9rem;">Arrive 10–15 minutes early. Bring your ID, insurance card, and completed forms.</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:4rem;">
+        <div><span class="section-label">Checklist</span><h2>What to Bring</h2><div class="gold-line"></div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Valid photo ID</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Dental insurance card (if applicable)</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Completed new patient forms</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>List of current medications and allergies</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>Recent dental X-rays (if available from previous dentist)</div><div class="cred-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="var(--gold)" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>A list of any dental concerns or questions</div></div>
+        <div><span class="section-label">What to Expect</span><h2>Your First Appointment</h2><div class="gold-line"></div><p style="margin-bottom:1rem;">Your first visit is typically about 60–90 minutes. Here's what we'll cover:</p><div style="display:flex;flex-direction:column;gap:1rem;"><div style="display:flex;gap:.75rem;font-size:.9rem;"><span style="color:var(--gold);font-weight:700;font-size:1.1rem;line-height:1.3;">→</span><div><strong style="color:var(--navy);">Review of your health history</strong> — we'll discuss your medical background, medications, and any dental concerns.</div></div><div style="display:flex;gap:.75rem;font-size:.9rem;"><span style="color:var(--gold);font-weight:700;font-size:1.1rem;line-height:1.3;">→</span><div><strong style="color:var(--navy);">Comprehensive oral exam</strong> — Dr. Laudig will examine your teeth, gums, jaw, and soft tissues.</div></div><div style="display:flex;gap:.75rem;font-size:.9rem;"><span style="color:var(--gold);font-weight:700;font-size:1.1rem;line-height:1.3;">→</span><div><strong style="color:var(--navy);">Digital X-rays</strong> — low-radiation images to get a complete picture of your oral health.</div></div><div style="display:flex;gap:.75rem;font-size:.9rem;"><span style="color:var(--gold);font-weight:700;font-size:1.1rem;line-height:1.3;">→</span><div><strong style="color:var(--navy);">Professional cleaning</strong> — unless additional treatment is needed first.</div></div><div style="display:flex;gap:.75rem;font-size:.9rem;"><span style="color:var(--gold);font-weight:700;font-size:1.1rem;line-height:1.3;">→</span><div><strong style="color:var(--navy);">Treatment planning</strong> — we'll discuss findings and recommend next steps, with no pressure.</div></div></div></div>
+      </div>
+      <div id="npforms"><span class="section-label">Patient Forms</span><h2>New Patient Forms</h2><div class="gold-line"></div><p>Save time at your first visit by completing these forms in advance.</p><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin-top:2rem;"><div style="background:var(--white);border-radius:var(--radius);padding:1.5rem;display:flex;align-items:center;gap:1rem;border:1px solid rgba(0,0,0,.06);"><div style="width:44px;height:44px;border-radius:10px;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">📋</div><div style="flex:1;"><strong style="color:var(--navy);font-size:.95rem;">New Patient Registration</strong><p style="font-size:.83rem;margin-top:.2rem;">Personal info, contact details, and emergency contacts</p></div><a href="#" class="btn btn-navy" style="font-size:.8rem;padding:.5rem 1rem;flex-shrink:0;">Download PDF</a></div><div style="background:var(--white);border-radius:var(--radius);padding:1.5rem;display:flex;align-items:center;gap:1rem;border:1px solid rgba(0,0,0,.06);"><div style="width:44px;height:44px;border-radius:10px;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">🏥</div><div style="flex:1;"><strong style="color:var(--navy);font-size:.95rem;">Medical History Form</strong><p style="font-size:.83rem;margin-top:.2rem;">Health conditions, medications, and allergies</p></div><a href="#" class="btn btn-navy" style="font-size:.8rem;padding:.5rem 1rem;flex-shrink:0;">Download PDF</a></div><div style="background:var(--white);border-radius:var(--radius);padding:1.5rem;display:flex;align-items:center;gap:1rem;border:1px solid rgba(0,0,0,.06);"><div style="width:44px;height:44px;border-radius:10px;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">🦷</div><div style="flex:1;"><strong style="color:var(--navy);font-size:.95rem;">Dental History Form</strong><p style="font-size:.83rem;margin-top:.2rem;">Previous dental work, concerns, and dental anxiety questionnaire</p></div><a href="#" class="btn btn-navy" style="font-size:.8rem;padding:.5rem 1rem;flex-shrink:0;">Download PDF</a></div><div style="background:var(--white);border-radius:var(--radius);padding:1.5rem;display:flex;align-items:center;gap:1rem;border:1px solid rgba(0,0,0,.06);"><div style="width:44px;height:44px;border-radius:10px;background:var(--gray-lt);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">📄</div><div style="flex:1;"><strong style="color:var(--navy);font-size:.95rem;">HIPAA Privacy Notice & Consent</strong><p style="font-size:.83rem;margin-top:.2rem;">Review and acknowledge our privacy practices</p></div><a href="#" class="btn btn-navy" style="font-size:.8rem;padding:.5rem 1rem;flex-shrink:0;">Download PDF</a></div></div></div>
+      <div style="background:linear-gradient(135deg,var(--navy),var(--navy-lt));border-radius:20px;padding:3rem;text-align:center;margin-top:4rem;"><h2 style="color:var(--white);margin-bottom:.75rem;">Ready to Get Started?</h2><p style="color:rgba(255,255,255,.7);margin:0 auto 2rem;max-width:480px;">We can't wait to meet you. Book your first appointment today.</p><a href="https://www.zocdoc.com" target="_blank" class="btn btn-primary">📅 Book My First Appointment</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- SHARED FOOTER (always visible) -->
+<footer class="footer" id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer;">
+        <span class="logo-name">Benjamin Laudig</span>
+        <span class="logo-title">DDS · Family & Cosmetic Dentistry</span>
+      </div>
+      <p>Providing compassionate, high-quality dental care to families in our community. Your smile is our greatest work.</p>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)">About Dr. Laudig</a></li><li><a onclick="showPage('services')">Services</a></li><li><a onclick="showPage('home');setTimeout(()=>document.getElementById('contact').scrollIntoView({behavior:'smooth'}),100)">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Patient Info</h4><ul><li><a onclick="showPage('insurance')">Insurance & Financing</a></li><li><a onclick="showPage('faq')">FAQ</a></li><li><a href="https://www.zocdoc.com" target="_blank">Book Appointment</a></li><li><a onclick="showPage('newpatient')">New Patient Forms</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><p>123 Smile Street, Suite 200<br>Your City, ST 00000</p><p style="margin-top:.75rem;"><a href="tel:+18005551234" style="color:rgba(255,255,255,.55);text-decoration:none;">(800) 555-1234</a></p><p style="margin-top:.4rem;"><a href="mailto:hello@laudigdds.com" style="color:rgba(255,255,255,.55);text-decoration:none;">hello@laudigdds.com</a></p></div>
+  </div>
+  <div class="footer-bottom"><p>© 2025 Benjamin Laudig DDS. All rights reserved.</p></div>
+</footer>
+
+<script>
+// ── Page navigation ──
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  // Update active nav link
+  document.querySelectorAll('.nav-links a[data-page]').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === id);
+  });
+  // Close mobile menu
+  document.getElementById('navLinks').classList.remove('open');
+}
+
+// ── Navbar scroll ──
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ── Hamburger ──
+document.getElementById('hamburger').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// ── FAQ accordion ──
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// ── Contact form ──
+document.getElementById('contactForm')?.addEventListener('submit', e => {
+  e.preventDefault();
+  const btn = e.target.querySelector('[type="submit"]');
+  btn.textContent = '✓ Message Sent!';
+  btn.style.background = '#22c55e';
+  btn.disabled = true;
+  setTimeout(() => {
+    btn.textContent = 'Send Message →';
+    btn.style.background = '';
+    btn.disabled = false;
+    e.target.reset();
+  }, 3500);
+});
+
+// ── Scroll reveal ──
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        obs.unobserve(e.target);
+      }
+    });
+  }, {threshold: 0.1});
+  document.querySelectorAll('.review-card, .service-card, .service-item, .insurance-card, .photo-item').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = `opacity 0.5s ${i * 0.07}s ease, transform 0.5s ${i * 0.07}s ease`;
+    obs.observe(el);
+  });
+}
+</script>
+</body>
+</html>
